@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "version": "1.2",
+  "name": "ShopRite Coupon Clipper",
+  "content_scripts": [
+    {
+      "matches": ["http://127.0.0.1/*"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["https://www.shoprite.com/*"],
+      "js": ["sr-content.js"]
+    }
+  ]
+}
